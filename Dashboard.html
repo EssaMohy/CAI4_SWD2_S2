@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Dashboard</h1>
+      <form role="search">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Search" />
+      </form>
+    </header>
+
+    <nav aria-label="Sidebar Navigation">
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section aria-labelledby="cards-title">
+        <h2 id="cards-title">Overview Cards</h2>
+
+        <article>
+          <h3>Card 1</h3>
+          <p>Summary data</p>
+        </article>
+
+        <article>
+          <h3>Card 2</h3>
+          <p>Statistics</p>
+        </article>
+
+        <article>
+          <h3>Card 3</h3>
+          <p>Performance</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="transactions-title">
+        <h2 id="transactions-title">Latest Transactions</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>$100</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <aside aria-labelledby="notifications-title">
+      <h2 id="notifications-title">Notifications</h2>
+      <p>No new alerts</p>
+    </aside>
+  </body>
+</html>
