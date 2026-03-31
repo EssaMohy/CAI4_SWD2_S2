@@ -1,48 +1,147 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home | My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Now</title>
 
-    <meta
-      name="description"
-      content="Welcome to the home page of My Website."
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
     />
-    <link rel="canonical" href="https://example.com/index.html" />
-
-    <meta property="og:title" content="My Website" />
-    <meta
-      property="og:description"
-      content="Learn more about our services and team."
-    />
-    <meta property="og:image" content="og-image.jpg" />
   </head>
-
   <body>
-    <a href="#content">Skip to content</a>
-
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <header class="top-bar">
+      <div class="logo">☀ Weather Now</div>
+      <select class="units-btn">
+        <option>⚙ Units</option>
+      </select>
     </header>
 
-    <main id="content">
-      <section>
-        <article>
-          <h1>Welcome</h1>
-          <p>This is the home page of our website.</p>
-        </article>
+    <main class="container">
+      <h1>How’s the sky looking today?</h1>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search for a place..." />
+        <button>Search</button>
+      </div>
+
+      <section class="content">
+        <!-- LEFT -->
+        <div class="left">
+          <div class="current-weather">
+            <div>
+              <h2>Berlin, Germany</h2>
+              <p>Tuesday, Aug 5, 2025</p>
+            </div>
+            <div class="temp">☀ 20°</div>
+          </div>
+
+          <div class="stats">
+            <div class="card">Feels Like<strong>18°</strong></div>
+            <div class="card">Humidity<strong>46%</strong></div>
+            <div class="card">Wind<strong>14 km/h</strong></div>
+            <div class="card">Precipitation<strong>0 mm</strong></div>
+          </div>
+
+          <div class="daily">
+            <h3>Daily forecast</h3>
+
+            <div class="days">
+              <div class="day">
+                <div class="name">Tue</div>
+                <div class="icon">🌧</div>
+                <div class="temp">20° / 14°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Wed</div>
+                <div class="icon">🌧</div>
+                <div class="temp">21° / 15°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Thu</div>
+                <div class="icon">☀</div>
+                <div class="temp">24° / 14°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Fri</div>
+                <div class="icon">⛅</div>
+                <div class="temp">25° / 13°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Sat</div>
+                <div class="icon">⛈</div>
+                <div class="temp">21° / 15°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Sun</div>
+                <div class="icon">🌧</div>
+                <div class="temp">25° / 16°</div>
+              </div>
+
+              <div class="day">
+                <div class="name">Mon</div>
+                <div class="icon">🌫</div>
+                <div class="temp">24° / 15°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <aside class="right">
+          <div class="right-header">
+            <h3>Hourly forecast</h3>
+
+            <select class="day-select">
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+            </select>
+          </div>
+
+          <ul class="hourly">
+            <li>
+              <div class="time"><span>☁</span>3 PM</div>
+              <span class="deg">20°</span>
+            </li>
+            <li>
+              <div class="time"><span>⛅</span>4 PM</div>
+              <span class="deg">20°</span>
+            </li>
+            <li>
+              <div class="time"><span>☀</span>5 PM</div>
+              <span class="deg">20°</span>
+            </li>
+            <li>
+              <div class="time"><span>☁</span>6 PM</div>
+              <span class="deg">19°</span>
+            </li>
+            <li>
+              <div class="time"><span>🌧</span>7 PM</div>
+              <span class="deg">18°</span>
+            </li>
+            <li>
+              <div class="time"><span>🌫</span>8 PM</div>
+              <span class="deg">18°</span>
+            </li>
+            <li>
+              <div class="time"><span>☁</span>9 PM</div>
+              <span class="deg">17°</span>
+            </li>
+            <li>
+              <div class="time"><span>☁</span>10 PM</div>
+              <span class="deg">17°</span>
+            </li>
+          </ul>
+        </aside>
       </section>
-
-      <aside>
-        <p>Latest updates and announcements</p>
-      </aside>
     </main>
-
-    <footer>
-      <p>© 2025 My Website</p>
-    </footer>
   </body>
 </html>
